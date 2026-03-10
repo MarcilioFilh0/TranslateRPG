@@ -5,8 +5,13 @@ const seletor = document.querySelector('#seletor-fonte');
 // Função para atualizar o texto
 entrada.addEventListener('input', () => {
     saida.textContent = entrada.value;
-    if (entrada.value === " ") {
-        saida.textContent = "O resultado aparecerá aqui.";
+
+    if (entrada.value === "") {
+        saida.textContent = "Digite algo...";
+    }
+
+    if (entrada.value === " " || entrada.value === "\n") {
+        saida.textContent = "Digite algo legivel...";   
     } 
 });
 

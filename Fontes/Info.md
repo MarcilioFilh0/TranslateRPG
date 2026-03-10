@@ -1,0 +1,1 @@
+Todas as fontes foram retiradas do Git: https://github.com/lilytiny613/fonts/

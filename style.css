@@ -8,7 +8,6 @@
     src: url('./Fontes/Draconato.ttf'); 
 }
 
-
 @font-face { /* Fonte Elfica */
     font-family: 'FonteElfoDnD';
     src: url('./Fontes/Elfo.ttf'); 
@@ -29,47 +28,99 @@ body {
 }
 
 textarea {
+    resize: none;
+    font-family: 'Arial', serif;
+    font-size: 20px;
+    border: 1px solid #777;
+    padding: 20px;
+    margin: 5px;
+    width: auto;
+    min-width: 760px;
+    min-height: 100px;
+    word-wrap: break-word;
+}
+
+.texto-geral {
+    text-align: center;
+    font-size: 20px;
     width: 100%;
-    height: 100px;
+    height: auto;
     margin-bottom: 20px;
 }
 
-h3 {
-    width: 100%;
-    height: 100px;
+.texto-geral p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.texto-comum {
+    width: auto;
+    min-width: 760px;
+    height: auto;
     margin-bottom: 20px;
+    border: 1.5px solid;
+    border-color: #110805;
+    background-color: #ffffff;
+}
+
+.texto-comum select {
+    font-size: 15px;
+    background-color: #f5f5f5;
+    color: #000000;   
+}
+
+.texto-comum label {
+    margin: 3px;
+    font-size: 15px;
+    color: #000000;
 }
 
 #saida {
-    white-space: pre-wrap; /* Esta é a linha mágica! */
-    word-wrap: break-word; /* Garante que palavras longas não quebrem o layout */
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+}
+
+/* A partir daqui são as fontes*/
+.fonte-comum {
+    font-family: 'Arial', serif;
+    font-size: 20px;
+    border: 1px solid #777;
+    padding: 20px;
+    margin: 5px;
+    width: auto;
+    min-height: 100px;
+    word-wrap: break-word;
 }
 
 .fonte-ana {
     font-family: 'FonteAnaDnD', serif;
-    font-size: 2.5rem;
+    font-size: 43px;
     border: 1px solid #777;
     padding: 20px;
+    margin: 5px;
     width: auto;
-    min-height: auto;
+    min-height: 100px;
     word-wrap: break-word;
 }
 
 .fonte-draconica {
     font-family: 'FonteDraconatoDnD', serif;
-    font-size: 1.8rem;
+    font-size: 30px;
     border: 1px solid #777;
     padding: 20px;
+    margin: 5px;
     width: auto;
-    min-height: auto;
+    min-height: 100px;
     word-wrap: break-word;
 }
 
 .fonte-elfica {
     font-family: 'FonteElfoDnD', serif;
-    font-size: 2.2rem;
+    font-size: 40px;
     border: 1px solid #777;
     padding: 20px;
+    margin: 5px;
     width: auto;
     min-height: 100px;
     word-wrap: break-word;
@@ -80,6 +131,7 @@ h3 {
     font-size: 2rem;
     border: 1px solid #777;
     padding: 20px;
+    margin: 5px;
     width: auto;
     min-height: 100px;
     word-wrap: break-word;
