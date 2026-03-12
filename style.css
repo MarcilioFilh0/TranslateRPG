@@ -18,6 +18,11 @@
     src: url('./Fontes/Infernal.ttf'); 
 }
 
+@font-face { /* Sigilos do outro lado */
+    font-family: 'FonteSigilos';
+    src: url('./Fontes/Sigilos.ttf');
+}
+
 body {
     background-color: #f1f1f1;
     color: #010101;
@@ -65,9 +70,11 @@ textarea {
 }
 
 .texto-comum select {
+    margin-top: 2px;
+    border-radius: 7px;
     font-size: 15px;
     background-color: #f5f5f5;
-    color: #000000;   
+    color: #000000;
 }
 
 .texto-comum label {
@@ -129,6 +136,17 @@ textarea {
 .fonte-infernal {
     font-family: 'FonteInfernalDnD', serif;
     font-size: 2rem;
+    border: 1px solid #777;
+    padding: 20px;
+    margin: 5px;
+    width: auto;
+    min-height: 100px;
+    word-wrap: break-word;
+}
+
+.fonte-sigilos {
+    font-family: 'FonteSigilos', serif;
+    font-size: 35px;
     border: 1px solid #777;
     padding: 20px;
     margin: 5px;
