@@ -18,7 +18,7 @@
     src: url('./Fontes/Infernal.ttf'); 
 }
 
-@font-face { /* Sigilos do outro lado */
+@font-face { /* Sigilos do Outro Lado */
     font-family: 'FonteSigilos';
     src: url('./Fontes/Sigilos.ttf');
 }
@@ -59,7 +59,7 @@ textarea {
     margin: 10px 0;
 }
 
-.texto-comum {
+.composto {
     width: auto;
     min-width: 760px;
     height: auto;
@@ -69,7 +69,7 @@ textarea {
     background-color: #ffffff;
 }
 
-.texto-comum select {
+.composto select {
     margin-top: 2px;
     border-radius: 7px;
     font-size: 15px;
@@ -77,10 +77,43 @@ textarea {
     color: #000000;
 }
 
-.texto-comum label {
-    margin: 3px;
+.composto label {
+    margin: 5px;
     font-size: 15px;
     color: #000000;
+}
+
+.texto-sobre {
+    text-align: justify; 
+    width: auto;
+    min-width: 760px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.btn-config {
+    justify-content: flex-end;
+    margin: 5px;
+    border-radius: 7px;
+    justify-content: flex-end;
+}
+
+.div-invisivel {
+    display: none;
+    background-color: #e3e3f5;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+.div-visivel {
+    display: block;
+}
+
+.ajustes {
+    display: flex;
+    margin: 5px;
 }
 
 #saida {
@@ -135,7 +168,7 @@ textarea {
 
 .fonte-infernal {
     font-family: 'FonteInfernalDnD', serif;
-    font-size: 2rem;
+    font-size: 30px;
     border: 1px solid #777;
     padding: 20px;
     margin: 5px;
