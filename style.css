@@ -1,26 +1,31 @@
 @font-face { /* Fonte Anã */
     font-family: 'FonteAnaDnD';
-    src: url('./Fontes/Anao.ttf'); 
+    src: url('./Fontes/Anao-Regular.ttf'); 
 }
 
 @font-face { /* Fonte Draconica */
     font-family: 'FonteDraconatoDnD';
-    src: url('./Fontes/Draconato.ttf'); 
+    src: url('./Fontes/Draconato-Regular.ttf'); 
 }
 
 @font-face { /* Fonte Elfica */
     font-family: 'FonteElfoDnD';
-    src: url('./Fontes/Elfo.ttf'); 
+    src: url('./Fontes/Elfo-Regular.ttf'); 
 }
 
 @font-face { /* Fonte Infernal */
     font-family: 'FonteInfernalDnD';
-    src: url('./Fontes/Infernal.ttf'); 
+    src: url('./Fontes/Infernal-Regular.ttf'); 
 }
 
 @font-face { /* Sigilos do Outro Lado */
     font-family: 'FonteSigilos';
-    src: url('./Fontes/Sigilos.ttf');
+    src: url('./Fontes/Sigilos-Regular.ttf');
+}
+
+@font-face { /* Fonte Espiral */
+    font-family: 'FonteEspiral';
+    src: url('./Fontes/Esp-Regular.ttf');
 }
 
 body {
@@ -30,6 +35,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px ;
+    margin-top: 15px;
+    border: 0.1px solid #333;
+    text-align: center;
+    width: 100%;
 }
 
 textarea {
@@ -57,6 +77,13 @@ textarea {
     text-align: justify;
     font-size: 16px;
     margin: 10px 0;
+}
+
+.entrada-saida {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
 }
 
 .composto {
@@ -90,6 +117,25 @@ textarea {
     height: auto;
     margin-bottom: 20px;
     padding: 15px;
+}
+
+.texto-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.link-github {
+    display: flex;
+    gap: 20px;
+}
+
+.link-github a {
+    color: #040404;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s, transform 0.2s;
 }
 
 .btn-config {
@@ -179,6 +225,17 @@ textarea {
 
 .fonte-sigilos {
     font-family: 'FonteSigilos', serif;
+    font-size: 35px;
+    border: 1px solid #777;
+    padding: 20px;
+    margin: 5px;
+    width: auto;
+    min-height: 100px;
+    word-wrap: break-word;
+}
+
+.fonte-espiral {
+    font-family: 'FonteEspiral', serif;
     font-size: 35px;
     border: 1px solid #777;
     padding: 20px;

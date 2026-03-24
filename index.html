@@ -8,6 +8,7 @@
 <body>
     <h1>Tradutor de Idiomas</h1>
     
+<main>
     <div class="texto-sobre">
         <p> 
             Esse é um projeto pessoal focado em transcrever textos para campanhas que utilizam de idiomas ficticios. <br>
@@ -17,7 +18,7 @@
         <p>
             Algumas pequenas observações: <br>
              -> Acentos e caracteres especiais não são válidos. <br>
-             -> O resultado é apenas uma transcrição visual, sem tradução real. <br>
+             -> O resultado é apenas uma transcrição visual, não a criação de uma nova fonte<br>
         </p>
     </div>
     
@@ -32,6 +33,7 @@
             <option value="fonte-elfica">Élfico</option>
             <option value="fonte-infernal">Infernal</option>
             <option value="fonte-sigilos">Sigilos</option>
+            <option value="fonte-espiral">Espiral</option>
         </select>
             <button class="btn-config" onclick="ajustes()"> # </button>
             
@@ -63,12 +65,25 @@
             </div>
         </div>
         
-        <div>
+        <div class="entrada-saida">
         <textarea id="entrada" placeholder="Digite em comum..."></textarea>
         <h3 id="saida"></h3>
        </div>
 
     </div>
+</main>
+
+    <footer>
+        <div class="texto-footer">
+        <p> Projeto desenvolvido por Marcilio Filho</p>
+            <div class="link-github">
+                <p> Link para o repositório no GitHub: </p>
+                <a href="https://github.com/MarcilioFilh0/TradutorDnD" target="_blank"> Github </a>
+            </div>
+        
+        
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
