@@ -29,7 +29,7 @@
 }
 
 body {
-    background-color: #f1f1f1;
+    background: radial-gradient(circle, #f1f1f1 0%, #f5ef9f 100%);
     color: #010101;
     font-family: sans-serif;
     display: flex;
@@ -44,10 +44,10 @@ main {
 }
 
 footer {
-    background-color: #f9f9f9;
+    background: linear-gradient(0deg, #f5ef9f 0%, #f9f9f9 100%);
     padding: 20px ;
     margin-top: 15px;
-    border: 0.1px solid #333;
+    border: 1px solid #000;
     text-align: center;
     width: 100%;
 }
