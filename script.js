@@ -9,8 +9,6 @@ const resetBtn = document.querySelector('#bnt-reset');
 
 entrada.addEventListener('input', () => {
     saida.textContent = entrada.value;
-    saida.style.textContent = "Digite algo";
-
 });
 
 seletor.addEventListener('change', () => {
@@ -41,6 +39,7 @@ corFundo.addEventListener('input', () => {
 resetBtn.addEventListener('click', () => {
     numTamanho.value = 30;
     corFonte.value = '#000000';
+    corFundo.value = '#ffffff';
     saidaConfig.style.fontSize = numTamanho.value + "px";
     saidaConfig.style.color = '#000000';
     saidaConfig.style.backgroundColor = '#ffffff';
